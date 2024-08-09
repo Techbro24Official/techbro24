@@ -78,7 +78,8 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
         <a href="index.html" class="navbar-brand p-0">
-            <h1 class="m-0 text-primary"><i class="fa fa-tooth me-2"></i>TechBro24</h1>
+           <!--  <h1 class="m-0 text-primary"><i class="fa fa-tooth me-2"></i>TechBro24</h1> -->
+            <img src="img/logo.png" class="header-logo"></img>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -87,8 +88,8 @@
             <div class="navbar-nav ms-auto py-0">
                 <a href="index.html" class="nav-item nav-link active">Home</a>
                 <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="service.html" class="nav-item nav-link">Service</a>
-                <a href="service.html" class="nav-item nav-link">Portfolio</a>
+                <a href="service.html" class="nav-item nav-link">Service</a>.
+                <!-- <a href="service.html" class="nav-item nav-link">Portfolio</a> -->
                 <!-- <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu m-0">
@@ -106,26 +107,6 @@
     </nav>
     <!-- Navbar End -->
 
-
-    <!-- Full Screen Search Start -->
-    <div class="modal fade" id="searchModal" tabindex="-1">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
-                <div class="modal-header border-0">
-                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal"
-                        aria-label="Close"></button>
-                </div>
-                <div class="modal-body d-flex align-items-center justify-content-center">
-                    <div class="input-group" style="max-width: 600px;">
-                        <input type="text" class="form-control bg-transparent border-primary p-3"
-                            placeholder="Type search keyword">
-                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Full Screen Search End -->
 
 
     <!-- Carousel Start -->
@@ -177,6 +158,15 @@
     <div class="container-fluid banner mb-5">
         <div class="container">
             <div class="row gx-0">
+
+                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.3s">
+                    <div class="bg-dark d-flex flex-column p-5" style="height: 300px;">
+                        <h3 class="text-white mb-3">Clients Served</h3>
+                        <p class="text-white">At Techbro24, we pride ourselves on happy clients who trust our tailored
+                            strategies in design, ads, and development to drive measurable growth</p>
+                        <h2 class="text-white mb-0">63+</h2>
+                    </div>
+                </div>
                 <div class="col-lg-4 wow zoomIn" data-wow-delay="0.1s">
                     <div class="bg-primary d-flex flex-column p-5" style="height: 300px;">
                         <h3 class="text-white mb-3">Opening Hours</h3>
@@ -195,29 +185,9 @@
                         <a class="btn btn-light" href="">Call Us</a>
                     </div>
                 </div>
-                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.3s">
-                    <div class="bg-dark d-flex flex-column p-5" style="height: 300px;">
-                        <h3 class="text-white mb-3">Search A Service</h3>
-                        <div class="date mb-3" id="date" data-target-input="nearest">
-                            <input type="text" class="form-control bg-light border-0 datetimepicker-input"
-                                placeholder="Select Date" data-target="#date" data-toggle="datetimepicker"
-                                style="height: 40px;">
-                        </div>
-                        <select class="form-select bg-light border-0 mb-3" style="height: 40px;">
-                            <option selected>Select a Service</option>
-                            <option value="1">SEO Service</option>
-                            <option value="2">Social Media Marketing</option>
-                            <option value="3">Web Development</option>
-                            <option value="4">App Development</option>
-                            <option value="5">Branding</option>
-                            <option value="6">Google Ads</option>
-                        </select>
-                        <a class="btn btn-light" href="">Search Service</a>
-                    </div>
-                </div>
                 <div class="col-lg-4 wow zoomIn" data-wow-delay="0.6s">
                     <div class="bg-secondary d-flex flex-column p-5" style="height: 300px;">
-                        <h3 class="text-white mb-3">Make Appointment</h3>
+                        <h3 class="text-white mb-3">Contact Us</h3>
                         <p class="text-white">With over 50+ happy clients of TechBro24, don’t you want to be the next?
                             Get A Free 30-min Consultation</p>
                         <h2 class="text-white mb-0">+917597722920</h2>
@@ -231,7 +201,7 @@
 
     <!-- About Start -->
     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
+        <div id="about" class="container">
             <div class="row g-5">
                 <div class="col-lg-7">
                     <div class="section-title mb-4">
@@ -285,13 +255,13 @@
                             but we also want to make sure
                             that you stick to your budget. That's why we offer competitive rates that won't break the
                             bank.
-                            Let us help you get your business on top. Appoint us today to get started.</p>
+                            Let us help you get your business on top.Submit details today to get started.</p>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="appointment-form h-100 d-flex flex-column justify-content-center text-center p-5 wow zoomIn"
                         data-wow-delay="0.6s">
-                        <h1 class="text-white mb-4">Make Appointment</h1>
+                        <h1 class="text-white mb-4">Get Callback</h1>
                         <form>
                             <div class="row g-3">
                                 <div class="col-12 col-sm-12">
@@ -332,7 +302,7 @@
                                     </div>
                                 </div> -->
                                 <div class="col-12">
-                                    <button class="btn btn-dark w-100 py-3" type="submit">Make Appointment</button>
+                                    <button class="btn btn-dark w-100 py-3" type="submit">Submit</button>
                                 </div>
                             </div>
                         </form>
@@ -346,7 +316,7 @@
 
     <!-- Service Start -->
     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
+        <div id="service" class="container">
             <div class="row g-5 mb-5">
                 <div class="col-lg-5 wow zoomIn" data-wow-delay="0.3s" style="min-height: 400px;">
                     <div class="twentytwenty-container position-relative h-100 rounded overflow-hidden">
@@ -404,8 +374,10 @@
                     <div
                         class="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-4">
                         <h3 class="text-white mb-3">More On Demand Service</h3>
-                        <p class="text-white mb-3">They say great things start with small beginnings. But, at TechBro24, an award winning leading digital 
-                            marketing agency in Jaipur, we have a different saying – We give a great beginning for endless business opportunities.</p>
+                        <p class="text-white mb-3">They say great things start with small beginnings. But, at TechBro24,
+                            an award winning leading digital
+                            marketing agency in Jaipur, we have a different saying – We give a great beginning for
+                            endless business opportunities.</p>
                         <h2 class="text-white mb-0">+917597722920</h2>
                     </div>
                 </div>
@@ -422,11 +394,10 @@
                 <div class="col-lg-7 wow zoomIn" data-wow-delay="0.6s">
                     <div class="offer-text text-center rounded p-5">
                         <h1 class="display-5 text-white">Save 30% On Your First Deal You Make With Us</h1>
-                        <p class="text-white mb-4">Drive Your Business Success To New Heights 
-                            | Unlocking Growth with our C.O.R.E 
+                        <p class="text-white mb-4">Drive Your Business Success To New Heights
+                            | Unlocking Growth with our C.O.R.E
                             | Let’s Make Something Great Together!.</p>
-                        <a href="appointment.html" class="btn btn-dark py-3 px-5 me-3">Appoint Us</a>
-                        <a href="" class="btn btn-light py-3 px-5">Read More</a>
+                        <a href="appointment.html" class="btn btn-dark py-3 px-5 me-3">Contact Us</a>
                     </div>
                 </div>
             </div>
@@ -444,8 +415,9 @@
                         <h5 class="position-relative d-inline-block text-primary text-uppercase">Pricing Plan</h5>
                         <h1 class="display-5 mb-0">We Offer Fair Prices for your Digital Needs</h1>
                     </div>
-                    <p class="mb-4">Based on market demand, we have created 3 packages that will cover all your business needs.</p>
-                    <h5 class="text-uppercase text-primary wow fadeInUp" data-wow-delay="0.3s">Call for Appointment</h5>
+                    <p class="mb-4">Based on market demand, we have created 3 packages that will cover all your business
+                        needs.</p>
+                    <h5 class="text-uppercase text-primary wow fadeInUp" data-wow-delay="0.3s">Call Us Now</h5>
                     <h1 class="wow fadeInUp" data-wow-delay="0.6s">+917597722920</h1>
                 </div>
                 <div class="col-lg-7">
@@ -528,17 +500,20 @@
                 <div class="col-lg-7">
                     <div class="owl-carousel testimonial-carousel rounded p-5 wow zoomIn" data-wow-delay="0.6s">
                         <div class="testimonial-item text-center text-white">
-                            <img class="img-fluid mx-auto rounded mb-4" src="img/testimonial-1.jpg" alt="">
-                            <p class="fs-5">Techbro24 transformed our brand's website into a visually stunning and highly functional platform. 
-                                Their professionalism and ability to deliver ahead of schedule truly impressed us. 
+                            <img class="img-fluid mx-auto rounded mb-4" src="img/testimonial-1.png" alt="">
+                            <p class="fs-5">Techbro24 transformed our brand's website into a visually stunning and
+                                highly functional platform.
+                                Their professionalism and ability to deliver ahead of schedule truly impressed us.
                                 We couldn’t be happier with their services!</p>
                             <hr class="mx-auto w-25">
                             <h4 class="text-white mb-0">John Anderson, CEO of Anderson Consulting</h4>
                         </div>
                         <div class="testimonial-item text-center text-white">
-                            <img class="img-fluid mx-auto rounded mb-4" src="img/testimonial-2.jpg" alt="">
-                            <p class="fs-5">When it comes to graphic design, Techbro24 is unparalleled. The creatives they 
-                                produced for our product perfectly represent our brand image, and we couldn’t be more satisfied!</p>
+                            <img class="img-fluid mx-auto rounded mb-4" src="img/testimonial-2.png" alt="">
+                            <p class="fs-5">When it comes to graphic design, Techbro24 is unparalleled. The creatives
+                                they
+                                produced for our product perfectly represent our brand image, and we couldn’t be more
+                                satisfied!</p>
                             <hr class="mx-auto w-25">
                             <h4 class="text-white mb-0">David Chen, Product Manager at Zenith Electronics</h4>
                         </div>
@@ -567,14 +542,8 @@
                             <img class="img-fluid rounded-top w-100" src="img/team-1.png" alt="">
                             <div
                                 class="position-absolute top-100 start-50 translate-middle bg-light rounded p-2 d-flex">
-                                <a class="btn btn-primary btn-square m-1" href="#"><i
-                                        class="fab fa-twitter fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square m-1" href="#"><i
-                                        class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square m-1" href="#"><i
-                                        class="fab fa-linkedin-in fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square m-1" href="#"><i
-                                        class="fab fa-instagram fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square m-1" href="https://www.linkedin.com/in/pradeep-sain-b52811148/"><i
+                                    class="fab fa-linkedin-in fw-normal"></i></a>
                             </div>
                         </div>
                         <div class="team-text position-relative bg-light text-center rounded-bottom p-4 pt-5">
@@ -590,18 +559,12 @@
                             <div
                                 class="position-absolute top-100 start-50 translate-middle bg-light rounded p-2 d-flex">
                                 <a class="btn btn-primary btn-square m-1" href="#"><i
-                                        class="fab fa-twitter fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square m-1" href="#"><i
-                                        class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square m-1" href="#"><i
                                         class="fab fa-linkedin-in fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square m-1" href="#"><i
-                                        class="fab fa-instagram fw-normal"></i></a>
                             </div>
                         </div>
                         <div class="team-text position-relative bg-light text-center rounded-bottom p-4 pt-5">
                             <h4 class="mb-2">Ashish Sablaniya</h4>
-                            <p class="text-primary mb-0">Co-Founder</p>
+                            <p class="text-primary mb-0">Co-Founder & CEO</p>
                         </div>
                     </div>
                 </div>
@@ -611,19 +574,13 @@
                             <img class="img-fluid rounded-top w-100" src="img/team-3.png" alt="">
                             <div
                                 class="position-absolute top-100 start-50 translate-middle bg-light rounded p-2 d-flex">
-                                <a class="btn btn-primary btn-square m-1" href="#"><i
-                                        class="fab fa-twitter fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square m-1" href="#"><i
-                                        class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square m-1" href="#"><i
+                                <a class="btn btn-primary btn-square m-1" href="https://www.linkedin.com/in/bal-krishan-swami/"><i
                                         class="fab fa-linkedin-in fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square m-1" href="#"><i
-                                        class="fab fa-instagram fw-normal"></i></a>
                             </div>
                         </div>
                         <div class="team-text position-relative bg-light text-center rounded-bottom p-4 pt-5">
                             <h4 class="mb-2">Bal Krishan Swami</h4>
-                            <p class="text-primary mb-0">Developer</p>
+                            <p class="text-primary mb-0">Web & App Developer</p>
                         </div>
                     </div>
                 </div>
@@ -633,14 +590,8 @@
                             <img class="img-fluid rounded-top w-100" src="img/team-4.png" alt="">
                             <div
                                 class="position-absolute top-100 start-50 translate-middle bg-light rounded p-2 d-flex">
-                                <a class="btn btn-primary btn-square m-1" href="#"><i
-                                        class="fab fa-twitter fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square m-1" href="#"><i
-                                        class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square m-1" href="#"><i
+                                <a class="btn btn-primary btn-square m-1" href="https://www.linkedin.com/in/sachin-sain-597ba8296/"><i
                                         class="fab fa-linkedin-in fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square m-1" href="#"><i
-                                        class="fab fa-instagram fw-normal"></i></a>
                             </div>
                         </div>
                         <div class="team-text position-relative bg-light text-center rounded-bottom p-4 pt-5">
@@ -655,14 +606,8 @@
                             <img class="img-fluid rounded-top w-100" src="img/team-5.png" alt="">
                             <div
                                 class="position-absolute top-100 start-50 translate-middle bg-light rounded p-2 d-flex">
-                                <a class="btn btn-primary btn-square m-1" href="#"><i
-                                        class="fab fa-twitter fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square m-1" href="#"><i
-                                        class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square m-1" href="#"><i
+                                <a class="btn btn-primary btn-square m-1" href="https://www.linkedin.com/in/narayan-sain-808602285/"><i
                                         class="fab fa-linkedin-in fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square m-1" href="#"><i
-                                        class="fab fa-instagram fw-normal"></i></a>
                             </div>
                         </div>
                         <div class="team-text position-relative bg-light text-center rounded-bottom p-4 pt-5">
@@ -677,22 +622,6 @@
     <!-- Team End -->
 
 
-    <!-- Newsletter Start -->
-    <!-- <div class="container-fluid position-relative pt-5 wow fadeInUp" data-wow-delay="0.1s" style="z-index: 1;">
-        <div class="container">
-            <div class="bg-primary p-5">
-                <form class="mx-auto" style="max-width: 600px;">
-                    <div class="input-group">
-                        <input type="text" class="form-control border-white p-3" placeholder="Your Email">
-                        <button class="btn btn-dark px-4">Sign Up</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div> -->
-    <!-- Newsletter End -->
-
-
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light py-5 wow fadeInUp" data-wow-delay="0.3s" style="margin-top: -75px;">
         <div class="container pt-5">
@@ -701,11 +630,14 @@
                     <h3 class="text-white mb-4">Quick Links</h3>
                     <div class="d-flex flex-column justify-content-start">
                         <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About
+                        <a class="text-light mb-2" href="#about"><i
+                                class="bi bi-arrow-right text-primary me-2"></i>About
                             Us</a>
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our
+                        <a class="text-light mb-2" href="#service"><i
+                                class="bi bi-arrow-right text-primary me-2"></i>Our
                             Services</a>
-                        <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                        <a class="text-light" href="contact.html"><i
+                                class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
                     </div>
                 </div>
                 <!-- <div class="col-lg-3 col-md-6">
@@ -721,7 +653,8 @@
                 </div> -->
                 <div class="col-lg-3 col-md-6">
                     <h3 class="text-white mb-4">Get In Touch</h3>
-                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>Office No. 1, 2nd Floor, Akshay Complex, Hatwara Rd, 
+                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>Office No. 1, 2nd Floor, Akshay
+                        Complex, Hatwara Rd,
                         near ESI Hospital, Laxmi Nagar, Jaipur, Rajasthan 302006</p>
                     <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>info@techbro24.com</p>
                     <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+917597722920</p>
@@ -729,13 +662,16 @@
                 <div class="col-lg-3 col-md-6">
                     <h3 class="text-white mb-4">Follow Us</h3>
                     <div class="d-flex">
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://x.com/techbro_24"><i
                                 class="fab fa-twitter fw-normal"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2"
+                            href="https://www.facebook.com/profile.php?id=61563340184265"><i
                                 class="fab fa-facebook-f fw-normal"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2"
+                            href="https://www.linkedin.com/company/techbro24/?originalSubdomain=in"><i
                                 class="fab fa-linkedin-in fw-normal"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded"
+                            href="https://www.instagram.com/techbro24official/"><i
                                 class="fab fa-instagram fw-normal"></i></a>
                     </div>
                 </div>
@@ -750,7 +686,8 @@
                         Rights Reserved.</p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <p class="mb-0">Designed by <a class="text-white border-bottom" href="https://htmlcodex.com">TechBro24</a></p>
+                    <p class="mb-0">Designed by <a class="text-white border-bottom"
+                            href="https://htmlcodex.com">TechBro24</a></p>
                 </div>
             </div>
         </div>
@@ -761,6 +698,11 @@
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
 
+    <a href="https://wa.me/917597722920" target="_blank" class="whatsapp-link">
+        <div class="pulse-background">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-logo">
+        </div>
+    </a>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
